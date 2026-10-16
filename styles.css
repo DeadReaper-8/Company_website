@@ -1202,7 +1202,7 @@ h1 span,
 
 @media (max-width: 380px) {
   .hero {
-    min-height: 880px;
+    min-height: clamp(880px, calc(880px + (380px - 100vw)), 940px);
   }
 
   .hero-actions {
